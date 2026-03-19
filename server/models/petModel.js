@@ -14,7 +14,7 @@ const pets = [
 // TODO: Create a new pet and add it to the array. Return the new pet.
 module.exports.create = (name) => {
   const newPet = { id: getId(), name };
-  games.push(newPet);
+  pets.push(newPet);
   return { ...newPet };
 }
 

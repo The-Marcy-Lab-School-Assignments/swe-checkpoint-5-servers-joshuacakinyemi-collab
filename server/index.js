@@ -5,12 +5,9 @@ const app = express();
 
 // TODO: Import your controllers from ./controllers/petControllers.js
 
-let pathToFrontend = path.join(__dirname, '../frontend');
-if (process.env.NODE_ENV === 'production') {
-  pathToFrontend = path.join(__dirname, '../frontend/dist');
-}
+const pathToFrontend = path.join(__dirname, '../frontend');
 
-const petControllers = require('./controllers/petControllers.js');
+const petControllers = require('./controllers/petControllers');
 
 /////////////////////
 // Middleware
